@@ -9,6 +9,7 @@
 }
 
 .hero {
+  /* height: 90vh; */
   padding-top: 2%;
   display: flex;
   flex-direction: column;
@@ -67,12 +68,11 @@
 }
 .hero img {
   width: 50%;
-  height: 50%;
-  float: right;
+  /* float: right; */
 }
 
 #navbarScroll {
-  text-align: right;
+  text-align: center;
 }
 
 .nav-item {
@@ -254,8 +254,13 @@
 
 @media screen and (max-width: 480px) {
   .hero {
-    padding-bottom: 5%;
+    padding-bottom: 15%;
   }
+  .hero img {
+    width: 100%;
+    /* float: right; */
+  }
+
   .hero h1 {
     font-size: 2rem;
   }
@@ -269,6 +274,16 @@
 
   .contact-us img {
     display: none;
+  }
+
+  #team {
+    padding: 10% 0;
+  }
+  #gallery {
+    padding: 10% 0 !important;
+  }
+  #footer {
+    padding: 10% 0;
   }
 }
 
