@@ -1,0 +1,372 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#logo {
+  width: 11vh;
+}
+
+.hero {
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero h1 {
+  padding: 0 28px;
+  font-size: 3rem;
+  font-weight: bolder;
+  max-width: max-content;
+  overflow: hidden;
+  border-right: 0.05em solid #464545; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0;
+  animation: 4s typing-erase 4s steps(50, end) infinite,
+    blink-caret 0.5s step-end infinite;
+  animation-delay: 3secs;
+}
+
+.hero h3 {
+  padding-top: 2%;
+  max-width: max-content;
+  overflow: hidden;
+  border-right: 0.05em solid #464545; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0;
+  animation: 5s typing-erase 4s steps(50, end) infinite,
+    blink-caret 0.5s step-end infinite;
+  animation-delay: 3sec;
+}
+@keyframes typing-erase {
+  0% {
+    width: 0;
+  }
+  80% {
+    width: 100%;
+  }
+  90%,
+  100% {
+    width: 0;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: gray;
+  }
+}
+.hero img {
+  width: 50%;
+  height: 50%;
+  float: right;
+}
+
+#navbarScroll {
+  text-align: right;
+}
+
+.nav-item {
+  padding: 0 16px;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+
+/* our team */
+
+.our-team {
+  height: max-content;
+  padding: 3%;
+  padding-top: 5%;
+  background-color: #be98be;
+  text-align: center;
+}
+
+.our-team h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+  color: rgb(224, 224, 224);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.team {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.team .member img {
+  width: 50%;
+  float: left;
+}
+
+.team .member h3 {
+  color: #444;
+}
+
+.team .member span {
+  font-size: 12px;
+}
+
+.team .member p {
+  margin: 0 15px;
+  padding: 0 6%;
+  padding-bottom: 1%;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.team .member .btn a {
+  background: #ddd;
+  display: block;
+  float: right;
+  width: 125px;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #444;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+.team .member .btn a:hover {
+  background: #6654a7;
+  color: #fff;
+  text-decoration: none !important;
+}
+
+/* partners */
+#partners {
+  background-color: #be98be;
+  text-align: center;
+  padding: 3%;
+}
+
+.pimage {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* contact us */
+
+.contact-us {
+  /* height: 100vh; */
+  padding: 2% 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+#contact {
+  max-width: 350px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-us img {
+  width: 50%;
+  padding-right: 7%;
+  margin-right: 2%;
+  float: left;
+}
+#contact h1 {
+  text-align: center;
+  color: #6654a7;
+  font-size: 2.3rem;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+
+#contact .input_field {
+  margin-bottom: 10px;
+}
+
+#contact .input_field input[type="text"],
+#contact textarea {
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  margin: 1%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#contact textarea {
+  resize: none;
+  height: 80px;
+}
+#contact .btn input[type="submit"] {
+  background: #6654a7;
+  display: block;
+  float: right;
+  width: 125px;
+  margin: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+#contact .btn input[type="submit"]:hover {
+  background: #ddd;
+  color: #444;
+  text-decoration: none !important;
+}
+
+#error_message {
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+/* footer */
+#footer {
+  text-align: center;
+  background-color: #be98be;
+  padding: 1%;
+}
+
+.iconlast {
+  margin: 2% 1%;
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    padding-bottom: 5%;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero h3 {
+    font-size: 1rem;
+  }
+
+  .our-team h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-us img {
+    display: none;
+  }
+}
+
+/* gallery */
+
+#gallery {
+  padding: 2% 0;
+}
+
+#gallery img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  transition: transform 1000ms;
+}
+
+#gallery ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  max-width: 100%;
+  width: 70rem;
+}
+
+#gallery figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#gallery figure::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(242, 190, 253, 0.5);
+  transform-origin: center;
+  opacity: 0;
+  transform: scale(2);
+  transition: opacity 300ms;
+}
+
+#gallery figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  padding: 1rem;
+  color: black;
+  font-size: 1.2rem;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 600ms, transform 600ms;
+}
+
+#gallery a:is(:hover, :focus) figure::after {
+  opacity: 1;
+}
+
+#gallery a:is(:hover, :focus) figcaption {
+  opacity: 1;
+  transition: opacity 600ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #gallery figcaption {
+    transform: translate3d(0, 2rem, 0);
+  }
+
+  #gallery figure::after {
+    border-radius: 50%;
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 900ms;
+  }
+
+  #gallery a:is(:hover, :focus) figure::after {
+    transform: scale(2.5);
+  }
+
+  #gallery a:is(:hover, :focus) figcaption {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: opacity 600ms 400ms, transform 600ms 400ms;
+  }
+
+  #gallery a:is(:hover, :focus) img {
+    transform: scale(1.2);
+  }
+}
